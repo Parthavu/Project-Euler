@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool isPalindrome(int num)
+bool isPalindrome(double num)
 {
     int reversed = 0;
     int temp = num;
@@ -18,9 +18,23 @@ bool isPalindrome(int num)
     return false;
 }
 
+double largestPalindrome()
+{
+    vector<int> palindromes;
+    for(int i = 999; i > 99; i --){
+        for(int j = 999; j > 99; j--){
+            if(isPalindrome(i*j)){
+                palindromes.push_back(i*j);
+            }
+        }
+    }
+
+    return *max_element(palindromes.begin(), palindromes.end());
+}
+
 int main()
 {
-    cout << isPalindrome(387) << endl;
+    cout << largestPalindrome() << endl;
 
     return 0;
 }
