@@ -26,8 +26,10 @@ abc = 2m\sqrt n(m^4-n^2)
 $$
 
 Since the numbers must add up to 1000, we get the following relation:
+
 $$
 m^2 + m\sqrt n - 500 = 0 \\
 m = \frac{-\sqrt n + \sqrt {n + 2000}}{2}
 $$
+
 $n$ and $n+2000$ must hence be prefect squares.
